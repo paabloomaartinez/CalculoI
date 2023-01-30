@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.33214.272
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CalculoIVA_DLL", "CalculoIVA_DLL\CalculoIVA_DLL.vbproj", "{32BEB8FF-2A74-4EA2-ADB9-42E6063DA2A4}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "IVAConsola", "Principal\IVAConsola.vbproj", "{BC1F0F4F-BA7F-4288-9C10-D600896899DD}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Principal", "Principal\Principal.vbproj", "{BC1F0F4F-BA7F-4288-9C10-D600896899DD}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "IVAWindowsCliente", "IVACalculoFormulario\IVAWindowsCliente.vbproj", "{9E159CAE-CE1B-4D8D-A521-51A2C959F1EF}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "IVACalculoFormulario", "IVACalculoFormulario\IVACalculoFormulario.vbproj", "{9E159CAE-CE1B-4D8D-A521-51A2C959F1EF}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CalculoIVA_DLL", "CalculoIVA_DLL\CalculoIVA_DLL.vbproj", "{C5C857DC-4DFC-4221-87E5-3E57A43A0696}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{32BEB8FF-2A74-4EA2-ADB9-42E6063DA2A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{32BEB8FF-2A74-4EA2-ADB9-42E6063DA2A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{32BEB8FF-2A74-4EA2-ADB9-42E6063DA2A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{32BEB8FF-2A74-4EA2-ADB9-42E6063DA2A4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BC1F0F4F-BA7F-4288-9C10-D600896899DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BC1F0F4F-BA7F-4288-9C10-D600896899DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC1F0F4F-BA7F-4288-9C10-D600896899DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,6 +23,10 @@ Global
 		{9E159CAE-CE1B-4D8D-A521-51A2C959F1EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E159CAE-CE1B-4D8D-A521-51A2C959F1EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E159CAE-CE1B-4D8D-A521-51A2C959F1EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5C857DC-4DFC-4221-87E5-3E57A43A0696}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5C857DC-4DFC-4221-87E5-3E57A43A0696}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5C857DC-4DFC-4221-87E5-3E57A43A0696}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5C857DC-4DFC-4221-87E5-3E57A43A0696}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
