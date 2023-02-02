@@ -10,7 +10,24 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <asp:Label ID="Label1" runat="server" Text="Total a pagar:"></asp:Label>
+            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
         </div>
+        <asp:Label ID="Label2" runat="server" Text="Tipo de IVA:"></asp:Label>
+        <asp:DropDownList ID="DropDownList1" runat="server">
+            <asp:ListItem Selected="True" Value="0.21">General</asp:ListItem>
+            <asp:ListItem Value="0.1">Reducido</asp:ListItem>
+            <asp:ListItem Value="0.04">Productos básicos</asp:ListItem>
+        </asp:DropDownList>
+        <p>
+            <asp:Button ID="Button1" runat="server" Text="Button" />
+        </p>
+        <asp:Label ID="Label3" runat="server" Text="Total sin IVA:"></asp:Label>
+        <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+        <p>
+            <asp:Label ID="Label4" runat="server" Text="IVA correspondiente:"></asp:Label>
+            <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+        </p>
     </form>
 </body>
 </html>
