@@ -1,4 +1,4 @@
-﻿Module IVAConsola
+﻿Module Principal
 
     Sub Main()
 

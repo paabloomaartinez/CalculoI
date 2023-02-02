@@ -16,14 +16,15 @@
     End Sub
 
 
-    Public Function totalSinIVA(ByVal totalAPagar As Double, ByVal tipoIVA As Byte) As Double
+    Public Function totalSinIVA(ByVal totalAPagar As Double, ByVal tipoIVA As Double) As Double
 
-        totalSinIVA = (totalAPagar / tipoIVA)
+        totalSinIVA = (totalAPagar / (1 + tipoIVA))
 
     End Function
 
-    Public Function IVA(ByVal cantidad As Double) As Double
+    Public Function IVA(ByVal totalAPagar As Double, ByVal tipoIVA As Double) As Double
 
+        IVA = totalAPagar - (totalAPagar / (1 + tipoIVA))
 
     End Function
 End Class

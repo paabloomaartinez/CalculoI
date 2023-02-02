@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{32BEB8FF-2A74-4EA2-ADB9-42E6063DA2A4}</ProjectGuid>
+    <ProjectGuid>{C5C857DC-4DFC-4221-87E5-3E57A43A0696}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>CalculoIVA_DLL</RootNamespace>
     <AssemblyName>CalculoIVA_DLL</AssemblyName>
