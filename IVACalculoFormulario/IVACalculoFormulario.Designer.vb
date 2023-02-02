@@ -36,7 +36,6 @@ Partial Class IVACalculoFormulario
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"General", "Reducido", "Productos básicos"})
         Me.ComboBox1.Location = New System.Drawing.Point(335, 133)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(121, 24)

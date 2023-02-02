@@ -10,19 +10,19 @@
 
     Private tipoIVA As ivas
 
-    Public Sub New(ByVal pTotalAPagar As Double, ByVal pTotalIVA As Byte)
+    Public Sub New(ByVal pTotalAPagar As Double, ByVal pTipoIVA As Byte)
         totalAPagar = pTotalAPagar
-        tipoIVA = pTotalIVA
+        tipoIVA = pTipoIVA
     End Sub
 
 
-    Public Function totalSinIVA(ByVal totalAPagar As Double, ByVal tipoIVA As Double) As Double
+    Public Function totalSinIVA() As Double
 
         totalSinIVA = (totalAPagar / (1 + tipoIVA))
 
     End Function
 
-    Public Function IVA(ByVal totalAPagar As Double, ByVal tipoIVA As Double) As Double
+    Public Function IVA() As Double
 
         IVA = totalAPagar - (totalAPagar / (1 + tipoIVA))
 
