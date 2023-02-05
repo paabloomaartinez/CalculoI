@@ -10,9 +10,9 @@
 
     Private tipoIVA As ivas
 
-    Public Sub New(ByVal pTotalAPagar As Double, ByVal pTotalIVA As ivas)
+    Public Sub New(ByVal pTotalAPagar As Double, ByVal pTipoIVA As Byte)
         totalAPagar = pTotalAPagar
-        tipoIVA = pTotalIVA
+        tipoIVA = pTipoIVA
     End Sub
 
 
