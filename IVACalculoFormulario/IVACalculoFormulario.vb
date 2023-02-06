@@ -22,5 +22,6 @@
         ComboBox1.Items.Add("General")
         ComboBox1.Items.Add("Reducido")
         ComboBox1.Items.Add("Productos Basicos")
+        ComboBox1.SelectedIndex = 0
     End Sub
 End Class
