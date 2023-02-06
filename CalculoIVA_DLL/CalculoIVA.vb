@@ -18,13 +18,13 @@
 
     Public Function totalSinIVA() As Double
 
-        totalSinIVA = totalAPagar
+        totalSinIVA = totalAPagar / (1 + tipoIVA)
 
     End Function
 
     Public Function IVA() As Double
 
-        IVA = tipoIVA
+        IVA = totalAPagar - (totalAPagar / (1 + tipoIVA))
 
     End Function
 End Class
