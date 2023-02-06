@@ -1,16 +1,10 @@
 ﻿Public Class CalculoIVA
 
-    Enum ivas
-        general = 0.21
-        reducido = 0.1
-        productosBasicos = 0.04
-    End Enum
-
     Private totalAPagar As Double
 
-    Private tipoIVA As ivas
+    Private tipoIVA As Double
 
-    Public Sub New(ByVal pTotalAPagar As Double, ByVal pTipoIVA As Byte)
+    Public Sub New(ByVal pTotalAPagar As Double, ByVal pTipoIVA As Double)
         totalAPagar = pTotalAPagar
         tipoIVA = pTipoIVA
     End Sub
@@ -18,13 +12,13 @@
 
     Public Function totalSinIVA() As Double
 
-        totalSinIVA = totalAPagar / (1 + tipoIVA)
+        totalSinIVA = Math.Round(totalAPagar / (1 + tipoIVA), 2)
 
     End Function
 
     Public Function IVA() As Double
 
-        IVA = totalAPagar - (totalAPagar / (1 + tipoIVA))
+        IVA = Math.Round(totalAPagar - (totalAPagar / (1 + tipoIVA)), 2)
 
     End Function
 End Class

@@ -1,6 +1,17 @@
 ﻿Public Class IVACalculoFormulario
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim c As New CalculoIVA_DLL.CalculoIVA(CDbl(TextBox1.Text), ComboBox1.SelectedValue)
+
+        Dim iva As Double
+
+        If ComboBox1.SelectedItem = "General" Then
+            iva = 0.21
+        ElseIf ComboBox1.SelectedItem = "Reducido" Then
+            iva = 0.1
+        ElseIf ComboBox1.SelectedItem = "Productos Basicos" Then
+            iva = 0.04
+        End If
+
+        Dim c As New CalculoIVA_DLL.CalculoIVA(CDbl(TextBox1.Text), iva)
 
         TextBox2.Text = c.totalSinIVA()
         TextBox3.Text = c.IVA()
