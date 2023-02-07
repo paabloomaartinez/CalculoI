@@ -7,7 +7,7 @@
         Dim tv As Double = Console.ReadLine
         Dim b As Boolean = False
         While b = False
-            Console.WriteLine("Tipos de IVA: General 21%, Reducido 10%, Productos basicos 4%: ")
+            Console.WriteLine("Tipos de IVA: General 21%, Reducido 10%, Productos basicos 4%")
             Console.WriteLine("Escoja el tipo de IVA (General, Reducido, Productos basicos): ")
             Dim nv As String = Console.ReadLine
             If nv = "General" Then
