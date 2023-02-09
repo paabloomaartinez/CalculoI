@@ -13,6 +13,8 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "IVAWebApp", "IVAWebApp\IVAW
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CapaDeDatos", "CapaDeDatos\CapaDeDatos.vbproj", "{2CE47C6E-4F6F-46FC-8DEC-7B0782D095E5}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CalculoIvaPorCapaDeDatos_DLL", "CalculoIvaPorCapaDeDatos_DLL\CalculoIvaPorCapaDeDatos_DLL.vbproj", "{48D113E2-5500-4E25-ACF0-BD5DA112A01E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{2CE47C6E-4F6F-46FC-8DEC-7B0782D095E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CE47C6E-4F6F-46FC-8DEC-7B0782D095E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CE47C6E-4F6F-46FC-8DEC-7B0782D095E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48D113E2-5500-4E25-ACF0-BD5DA112A01E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48D113E2-5500-4E25-ACF0-BD5DA112A01E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48D113E2-5500-4E25-ACF0-BD5DA112A01E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48D113E2-5500-4E25-ACF0-BD5DA112A01E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
