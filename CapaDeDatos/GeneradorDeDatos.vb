@@ -1,22 +1,24 @@
 ﻿Public Class GeneradorDeDatos
 
-    Private Shared ImportesFacturasYTiposIVA As Double(,)
+    Private Shared instance As GeneradorDeDatos
+    Private ImportesFacturasYTiposIVA As Double(,)
 
     Private Sub New()
-        ImportesFacturasYTiposIVA = New Double(,) {{2500, 10}, {3150.55, 21}, {25000, 21}, {315.35, 4}}
+        ImportesFacturasYTiposIVA = New Double(,) {{2500, 0.1}, {3150.55, 0.21}, {25000, 0.21}, {315.35, 0.04}}
     End Sub
 
-    Public Shared Function getInstance() As Double(,)
-        getInstance = ImportesFacturasYTiposIVA
+    Public Shared Function getInstance() As GeneradorDeDatos
+        If IsDBNull(instance) Then
+            instance = New CapaDeDatos.GeneradorDeDatos()
+        End If
+        getInstance = instance
     End Function
 
-    Public Shared Function totalDeLaFactura(ByVal indice As Integer) As Double
-        Dim c As New GeneradorDeDatos()
+    Public Function totalDeLaFactura(ByVal indice As Integer) As Double
         totalDeLaFactura = ImportesFacturasYTiposIVA(indice - 1, 0)
     End Function
 
-    Public Shared Function tipoIVADeLaFactura(ByVal indice As Integer) As Double
-        Dim c As New GeneradorDeDatos()
+    Public Function tipoIVADeLaFactura(ByVal indice As Integer) As Double
         tipoIVADeLaFactura = ImportesFacturasYTiposIVA(indice - 1, 1)
     End Function
 

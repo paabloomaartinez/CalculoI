@@ -1,19 +1,29 @@
 ﻿Public Class CalculoIVAMedianteCreadorDeDatos
 
-    Public array As Double(,)
+    Public generador As CapaDeDatos.GeneradorDeDatos
     Public Sub New(ByVal indice As Integer, ByVal val As CapaDeDatos.GeneradorDeDatos)
-        array = CapaDeDatos.GeneradorDeDatos.getInstance()
+        generador = CapaDeDatos.GeneradorDeDatos.getInstance()
     End Sub
 
-    Public Function totalSinIVA() As Double
+    Public Function totalSinIVA(ByVal indice As Integer) As Double
 
-        totalSinIVA = Math.Round(totalAPagar / (1 + tipoIVA), 2)
+        Dim total As Double = generador.totalDeLaFactura(indice)
+        Dim tipoIVA As Double = generador.tipoIVADeLaFactura(indice)
+
+        Dim calculador As New CalculoIVA_DLL.CalculoIVA(total, tipoIVA)
+
+        totalSinIVA = calculador.totalSinIVA()
 
     End Function
 
-    Public Function IVA() As Double
+    Public Function IVA(ByVal indice As Integer) As Double
 
-        IVA = Math.Round(totalAPagar - (totalAPagar / (1 + tipoIVA)), 2)
+        Dim total As Double = generador.totalDeLaFactura(indice)
+        Dim tipoIVA As Double = generador.tipoIVADeLaFactura(indice)
+
+        Dim calculador As New CalculoIVA_DLL.CalculoIVA(total, tipoIVA)
+
+        IVA = calculador.IVA()
 
     End Function
 End Class
