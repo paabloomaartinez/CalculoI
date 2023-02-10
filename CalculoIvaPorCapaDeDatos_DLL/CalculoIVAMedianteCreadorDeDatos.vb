@@ -4,13 +4,13 @@
     Public indice As Integer
     Public Sub New(ByVal indice As Integer)
         generador = CapaDeDatos.GeneradorDeDatos.getInstance()
-        indice = indice
+        Me.indice = indice
     End Sub
 
     Public Function totalSinIVA() As Double
 
-        Dim total As Double = generador.totalDeLaFactura(indice)
-        Dim tipoIVA As Double = generador.tipoIVADeLaFactura(indice)
+        Dim total As Double = generador.totalDeLaFactura(Me.indice)
+        Dim tipoIVA As Double = generador.tipoIVADeLaFactura(Me.indice)
 
         Dim calculador As New CalculoIVA_DLL.CalculoIVA(total, tipoIVA)
 

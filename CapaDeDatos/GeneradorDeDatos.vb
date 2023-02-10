@@ -8,7 +8,7 @@
     End Sub
 
     Public Shared Function getInstance() As GeneradorDeDatos
-        If IsDBNull(instance) Then
+        If instance Is Nothing Then
             instance = New CapaDeDatos.GeneradorDeDatos()
         End If
         getInstance = instance
