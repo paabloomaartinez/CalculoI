@@ -4,8 +4,6 @@
 
         Dim iva As Double
 
-
-
         Dim b As Boolean = False
         While b = False
             Console.WriteLine("Indique el indice de la factura (1, 2, 3, 4): ")
