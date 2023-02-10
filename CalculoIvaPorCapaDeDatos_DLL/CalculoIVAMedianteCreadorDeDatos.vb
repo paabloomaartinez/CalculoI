@@ -1,11 +1,13 @@
 ﻿Public Class CalculoIVAMedianteCreadorDeDatos
 
     Public generador As CapaDeDatos.GeneradorDeDatos
-    Public Sub New(ByVal indice As Integer, ByVal val As CapaDeDatos.GeneradorDeDatos)
+    Public indice As Integer
+    Public Sub New(ByVal indice As Integer)
         generador = CapaDeDatos.GeneradorDeDatos.getInstance()
+        indice = indice
     End Sub
 
-    Public Function totalSinIVA(ByVal indice As Integer) As Double
+    Public Function totalSinIVA() As Double
 
         Dim total As Double = generador.totalDeLaFactura(indice)
         Dim tipoIVA As Double = generador.tipoIVADeLaFactura(indice)
@@ -16,7 +18,7 @@
 
     End Function
 
-    Public Function IVA(ByVal indice As Integer) As Double
+    Public Function IVA() As Double
 
         Dim total As Double = generador.totalDeLaFactura(indice)
         Dim tipoIVA As Double = generador.tipoIVADeLaFactura(indice)
