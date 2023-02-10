@@ -106,5 +106,15 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CalculoIvaPorCapaDeDatos_DLL\CalculoIvaPorCapaDeDatos_DLL.vbproj">
+      <Project>{48d113e2-5500-4e25-acf0-bd5da112a01e}</Project>
+      <Name>CalculoIvaPorCapaDeDatos_DLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CalculoIVA_DLL\CalculoIVA_DLL.vbproj">
+      <Project>{c5c857dc-4dfc-4221-87e5-3e57a43a0696}</Project>
+      <Name>CalculoIVA_DLL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
